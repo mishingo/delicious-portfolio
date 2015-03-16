@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,300italic);
+@font-face {
+    font-family: 'fatty';
+    src: url('../fonts/fatty.eot');
+    src: url('../fonts/fatty.eot') format('embedded-opentype'),
+         url('../fonts/fatty.woff2') format('woff2'),
+         url('../fonts/fatty.woff') format('woff'),
+         url('../fonts/fatty.ttf') format('truetype'),
+         url('../fonts/fatty.svg#fatty') format('svg');
+}
+
+$green: #55CF9C;
+$yellow: #FFD241;
+$orange: #FFAA6E;
+$blue: #4679B5;
+
+$font-family-base: 'Lato', sans-serif;
+
+$mobile: 320px;
+$tablet: 500px;
+$laptop: 720px;

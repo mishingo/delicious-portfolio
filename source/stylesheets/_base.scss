@@ -1,0 +1,115 @@
+.header{
+	background-image: linear-gradient(-158deg, #4B61C0 0%, #5390D6 97%);
+	padding: 0px 15px; 
+	.header-contents{
+		@include container();
+		@include gutter();
+		.title{
+			padding:10px 0px;
+			@include breakpoint($mobile) {
+				@include span(10 of 12);
+		    	h1{
+		    		font-size: 8.8vw;
+					margin:0;
+			        color: #E3E3E3;
+			        text-shadow: -2px 2px 14px rgba(0,0,0,0.17);
+				}
+				h2{
+					font-size: 6vw;
+					margin:0;
+				}
+		  	}
+		  
+		  	@include breakpoint($laptop) {
+				@include span(6 of 12);
+		    	h1{
+		    		font-size: 5.9vw;
+				}
+		  	}
+		}
+		.feed-init{
+				@include breakpoint($mobile) {
+				@include span(2 of 12 last);
+				padding-top: 4%;
+				.feed-btn{
+					img{
+						height: 100%;
+						width: 100%;
+					}
+					cursor: pointer;
+				}
+				
+			}
+		}
+	}
+}
+
+#mobile-feed {
+  position: fixed;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #d3693e;
+  padding-top: 60px;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling: touch;
+  }
+
+
+nav {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    ul{
+    	display: table-row;
+    	margin: 0;
+    	padding: 0;
+    	li{
+    		list-style: none;
+    		display: table-cell;
+    		text-align: center;
+    		background: rgb(138, 194, 240);
+    		padding: 10px;
+    		border-bottom: rgb(74, 130, 132) solid 1px;
+    		a{
+    			display: block;
+    			text-decoration: none;
+    			color: white;
+    		}
+    		a:hover{
+    			text-decoration: none;
+    		}
+    	}
+    }
+}
+ 
+.hero{
+	background-image: linear-gradient(-158deg, #4B61C0 0%, #5390D6 97%);
+	padding-top:10px;
+	padding-bottom: 60px;
+	.hero-banner{
+		background-color: rgba(50, 50, 50, 0.3);
+		padding: 10px 0px;
+		.hero-title{
+			text-align: center;
+			h5{
+				margin: 0;
+				font-style: italic;
+				font-size: 6vw;
+				color: #FFD241;
+			}
+			.fat{
+				font-family: 'fatty';
+				color: #FFD241;
+				font-size: 10vw;
+			}
+		}
+		.hero-image{
+			text-align: center;
+			object{
+				width: 50%;
+			}
+		}
+	}
+}
