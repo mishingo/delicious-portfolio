@@ -13,3 +13,20 @@ title: Miguel Ramos Portfolio
     </div>
   </div>
 </div>
+
+<div class="card-holder">
+  <div id="featured" class="card">
+   <% blog.articles[0...1].each do |article| %>
+     <article>
+       <h2>
+         <a href="<%= article.url %>"><%= article.title %></a>
+       </h2>
+      <hr />
+      <p> <%= article.summary %> </p>
+        <div class="btn"> 
+          <a href="<%= article.url %>">Read more</a>
+        </div>
+     </article>
+   <% end %>
+  </div>
+</div>

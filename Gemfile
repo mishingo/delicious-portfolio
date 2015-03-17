@@ -14,3 +14,5 @@ gem "jquery-middleman"
 gem 'susy'
 
 gem 'breakpoint'
+
+gem "nokogiri"
