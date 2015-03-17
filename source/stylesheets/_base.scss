@@ -150,11 +150,38 @@ nav {
 }
 
 .recent-work{
-	padding: 5px 10px;
+	@include clearfix();
+	padding: 10px 10px;
 	.rw-img{
 		padding: 0px 15px;
 		img{
 			@include img-responsive();
 		}
+	}
+}
+
+footer{
+	background-color: #333333;
+	padding: 20px 15px;
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+	.me-badge{
+		text-align: center;
+	}
+	.social{
+		margin: 0;
+		padding: 0;
+		display: table;
+		width: 100%;
+		ul{
+    		display: table-row;
+    	}
+    	li{
+    		list-style: none;
+    		display: table-cell;
+    		text-align: center;
+ 
+    	}
 	}
 }
